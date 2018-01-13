@@ -1,0 +1,48 @@
+什么是 CSS 继承?哪些属性能继承，哪些不能？
+提示：写个demo来说明
+http://js.jirengu.com/jeqopekuto/2/edit?html,css,output
+
+
+Find
+No Results
+
+2
+块级元素和行内元素分别有哪些？
+提示：列出4条以上的特性区别
+2、width和height可以改变块级元素的宽高3、margin和padding的属性值可以使块级元素的宽高发生变化4、块级元素可以容纳行内元素和块级元素行内元素：1、多个行内元素都会排在一行，直到一行排满后换行5、在不设置宽的情况下，宽始终与浏览器宽度一样与内容无关2、width和height不能改变行内元素的宽高3、margin和padding的属性值可以改变行内元素的宽，但不会使高发生变化块级元素：1、块级元素会占据一整行不管内容多还是少
+
+
+Find
+No Results
+
+3
+如何让块级元素水平居中？如何让行内元素水平居中?如何让 inline-block 元素水平居中？
+块级元素水平居中：margin:auto行内元素水平居中: text-align:center inline-block 元素水平居中:给其父元素加上 text-align:center
+
+
+Find
+No Results
+
+4
+单行文本溢出加 ...如何实现?
+whit-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+
+
+Find
+No Results
+
+5
+px, em, rem,vw 有什么区别
+px:绝对单位   页面按精确像素展示em:相对单位  基准点为父节点字体的大小，如果自身定义了font-size按自身来计算（浏览器默认字体是16px），整个页面内1em不是rem:相对单位，可理解为”root em”, 相对根节点html的字体大小来计算一个固定的值。vw:viewpoint width，视窗宽度，1vw等于视窗宽度的1%。
+
+
+Find
+No Results
+
+6
+解释下面代码的作用? 字体里\5b8b\4f53代表什么?
+
+body{
+  font: 12px/1.5 tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+}
+font-size:12pxline-height:1.5font-family:tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;  \5b8b\4f53:  宋体
