@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>图片在容器内水平垂直居中，容器宽高大于图片宽高</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		.box{
+			width:400px;
+			height:400px;
+			margin:auto;
+			border:1px solid red;
+			text-align: center;
+		}
+		.box::after{
+			content: "";
+			width: 0;
+			height:100%;
+			background: #000;
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.box img{
+			display: inline-block;
+			vertical-align: middle;
+		}
+		/*.box2{
+			width: 0px;
+			height: 0px;
+			border-left:100px solid yellow;
+			border-top:100px solid pink;
+			border-bottom:100px solid blue;
+			border-right:100px solid #ccc;
+			margin-top: 20px;
+			color:red;
+			font-size: 18px;
+		}*/
+	</style>
+</head>
+<body>
+	<div class="box">
+		<img src="t1.jpg" alt="">
+	</div>
+	<!-- <div class="box2">我是个图片</div> -->
+</body>
+</html>

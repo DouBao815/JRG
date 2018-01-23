@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>不定宽高的块在浏览器窗口水平垂直居中</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		.box{
+			padding:20px 10px;
+			background: rgb(238,238,238);
+			display: inline-block;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%,-50%);
+		}
+		h1,p{
+			padding:10px 5px;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<h1>这里是内容</h1>
+		<p>内容宽高不定</p>
+	</div>
+</body>
+</html>

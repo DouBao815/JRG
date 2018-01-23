@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>并列三个按钮，在父容器内水平居中</title>
+	<style>
+		ul li{
+			list-style: none;
+		}
+		.box,.box1{
+			background: #ccc;
+			text-align: center;
+			padding:50px 0;
+			margin-top:20px;
+		}
+		.box>ul{
+			width: 18%;
+			margin:auto;
+		}
+		[class*=box]>ul::after{
+			content:"";
+			display: block;
+			clear:both;
+		}
+		[class*=box]>ul li{
+			font-size: 20px;
+			font-family: "微软雅黑";
+			color: #fff;
+			background: red;
+			border-radius: 5px;
+			float:left;
+			padding:10px 6px;
+			margin-left: 10px;
+		}
+
+		.box1{
+			position: relative;
+		}
+		.box1 ul{
+			position: absolute;
+			top: 34%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+		}
+	</style>
+</head>
+<body>
+<!-- 	<div class="box">
+		<ul>
+			<li>按钮1</li>
+			<li>按钮2</li>
+			<li>按钮3</li>
+		</ul>
+	</div> -->
+
+	<div class="box1">
+		<ul>
+			<li>按钮4</li>
+			<li>按钮5</li>
+			<li>按钮6</li>
+		</ul>
+	</div>
+</body>
+</html>

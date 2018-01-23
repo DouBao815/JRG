@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> 固定宽高的块在浏览器窗口水平垂直居中</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		.box{
+			width: 350px;
+			height:200px;
+			background: #424040;
+			border:2px solid red;
+			position: absolute;
+			top: calc(50% - 100px);
+			left: calc(50% - 175px);
+		}
+
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+	
+</body>
+</html>
